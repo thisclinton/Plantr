@@ -167,6 +167,8 @@ a{
 
 
     &__container{
+        display: grid;
+        position: relative;
         padding: 3rem 0;
         grid-template-columns: repeat(2, 1fr);
         gap: 2.5rem 3rem;
@@ -181,8 +183,60 @@ a{
         position: relative;
         width: 120px;
         justify-self: center;
-        margin-bottom: var(--mb-0-75);
+        margin-bottom: .75em;
         transition: .3s;
       }
       
 }
+
+button {
+    display: inline-block;
+    background-color:hsl(152, 24%, 32%);
+    color: #FFF;
+    padding: 1rem 1.75rem;
+    border-radius: .5rem;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.button--flex{
+    display: inline-flex;
+    align-items: center;
+    column-gap: .5rem;
+  }
+
+
+.product__button{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: hsl(152, 24%, 32%);
+    color: #FFF;
+    padding: .25rem;
+    border-radius: .35rem;
+    font-size: 1.15rem;
+  }
+
+
+.question {
+    margin-top: 6em;
+    background-color: hsl(152, 24%, 92%);
+    padding-top: 3em;
+    border-radius: .5rem;
+
+    &__title {
+        text-align: center;
+    }
+}
+
+.question__container{
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+  }
+
+  .questions__item {
+      background-color: #FFF;
+      margin: 2em 1em;
+      border-radius: .3em;
+      padding: .6em .9em;
+  }
