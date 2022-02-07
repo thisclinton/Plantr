@@ -91,3 +91,98 @@ a{
         font-weight: 500;
     }
 }
+
+.about {
+    margin-bottom: 3em;
+}
+
+.about__details {
+    display: grid;
+    row-gap: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.about__details-description {
+    display: inline-flex;
+    column-gap: .5rem;
+    font-size: .9rem;
+}
+
+.about__details-icon {
+    font-size: 1.1rem;
+    color: rgb(7, 53, 7);
+    margin-top: .13rem;
+}
+
+.steps {
+    margin-top: 8em;
+    background-color: hsl(152, 24%, 32%);
+    padding: 3em 2em 1em;
+    border-radius: 1em;
+    
+    &__header {
+        color: #FFF;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    &__container {
+        display: grid;
+        row-gap: 2rem;
+    }
+
+    &__card {
+        background-color: #FFF;
+        padding: 2.5rem 3rem 2rem 1.5rem;
+        border-radius: 1rem;
+    
+        &-number {
+            display: inline-block;
+            color: #FFF;
+            background-color: hsl(152, 24%, 28%);
+            padding: .5rem .75rem;
+            border-radius: .25rem;
+            font-size: 1.25rem;
+            margin-bottom: 1.5em;
+            transition: .3s;
+        }
+
+        &-title {
+            font-size: 1rem;
+            margin-bottom: .5em;
+        }
+
+        &-description {
+             font-size: .815rem;
+        }
+    }
+}
+
+.product {
+    margin-top: 8em;
+
+    &__header {
+        text-align: center;
+    }
+
+
+    &__container{
+        padding: 3rem 0;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem 3rem;
+      }
+
+    &__card{
+        display: grid;
+        position: relative;
+      }
+
+    &__img{
+        position: relative;
+        width: 120px;
+        justify-self: center;
+        margin-bottom: var(--mb-0-75);
+        transition: .3s;
+      }
+      
+}
