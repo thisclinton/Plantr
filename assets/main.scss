@@ -20,6 +20,16 @@ a{
     border: none;
 }
 
+.button__icon {
+    display: inline-flex;
+    padding-top: .1em;
+    transition: .3s;
+}
+
+.button:hover .button__icon{
+    transform: translateX(.25rem);
+  }
+
 .nav{
     width: 100%;
     display: flex;
@@ -32,11 +42,14 @@ a{
         align-items: center;
         column-gap: .5rem;
         transition: .3s;
+
+        &-icon  {
+            font-size: 1.15rem;
+            color: hsl(152, 24%, 32%);
+        }
     }
 
-    .ri-plant-line{
-        font-size: 1.15rem;
-    }
+   
 
     &__menu{
        display: none; 
@@ -89,6 +102,7 @@ a{
         border-radius: .5rem;
         transition: .3s;
         font-weight: 500;
+        background-color: hsl(152, 24%, 32%);
     }
 }
 
@@ -291,10 +305,11 @@ button {
     &__label{
         position: absolute;
         top: .75rem;
-        width: 100%;
+        width: 50%;
         font-size: .815rem;
         color: hsl(152, 4%, 55%);
         transition: .3s;
+        overflow: hidden;
     }
 
     &__area {
@@ -319,3 +334,29 @@ button {
     font-size: .75rem;
     z-index: 10;
   }
+
+.footer {
+    margin-top: 7em;
+
+    &__content {
+
+    }
+
+    &__logo {
+        font-size: 1.1rem;
+        display: inline-flex;
+        align-items: center;
+        column-gap: .3rem;
+        text-transform: uppercase;
+        font-weight: 550;
+        letter-spacing: -1px;
+        margin-bottom: 2.5em;
+        transition: .3s;
+
+        &-icon {
+            font-size: 1.2rem;
+            color: hsl(152, 24%, 32%);
+        }
+    }
+
+}

@@ -20,6 +20,20 @@ a {
   border: none;
 }
 
+.button__icon {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding-top: .1em;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.button:hover .button__icon {
+  -webkit-transform: translateX(0.25rem);
+          transform: translateX(0.25rem);
+}
+
 .nav {
   width: 100%;
   display: -webkit-box;
@@ -47,8 +61,9 @@ a {
   transition: .3s;
 }
 
-.nav .ri-plant-line {
+.nav__logo-icon {
   font-size: 1.15rem;
+  color: #3e6553;
 }
 
 .nav__menu {
@@ -110,6 +125,7 @@ a {
   -webkit-transition: .3s;
   transition: .3s;
   font-weight: 500;
+  background-color: #3e6553;
 }
 
 .about {
@@ -322,11 +338,12 @@ button {
 .contact__label {
   position: absolute;
   top: .75rem;
-  width: 100%;
+  width: 50%;
   font-size: .815rem;
   color: #88918d;
   -webkit-transition: .3s;
   transition: .3s;
+  overflow: hidden;
 }
 
 .contact__area {
@@ -348,5 +365,32 @@ button {
   top: -.75rem;
   font-size: .75rem;
   z-index: 10;
+}
+
+.footer {
+  margin-top: 7em;
+}
+
+.footer__logo {
+  font-size: 1.1rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: .3rem;
+          column-gap: .3rem;
+  text-transform: uppercase;
+  font-weight: 550;
+  letter-spacing: -1px;
+  margin-bottom: 2.5em;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.footer__logo-icon {
+  font-size: 1.2rem;
+  color: #3e6553;
 }
 /*# sourceMappingURL=main.css.map */
