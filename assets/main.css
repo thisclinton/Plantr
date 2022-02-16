@@ -393,4 +393,62 @@ button {
   font-size: 1.2rem;
   color: #3e6553;
 }
+
+.footer__subscribe {
+  background-color: #a0c5b4;
+  padding: .75em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: .5em;
+}
+
+.footer__input {
+  width: 65%;
+  padding: 0 .5rem;
+  background: none;
+  border: none;
+  outline: none;
+  color: #565d59;
+  border-bottom: 1px solid #88918d;
+}
+
+.footer__button {
+  padding: 1em;
+}
+
+.footer__data {
+  list-style-type: none;
+  display: -ms-grid;
+  display: grid;
+  row-gap: .75rem;
+  padding-left: 0;
+}
+
+.footer__information {
+  font-size: .815rem;
+}
+
+.footer__social {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-column-gap: .75em;
+          column-gap: .75em;
+}
+
+.footer__social-link {
+  font-size: 1rem;
+  color: #565d59;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.footer__social-link:hover {
+  -webkit-transform: translateY(-0.25rem);
+          transform: translateY(-0.25rem);
+}
 /*# sourceMappingURL=main.css.map */
