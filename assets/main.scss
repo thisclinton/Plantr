@@ -52,24 +52,57 @@ a{
    
 
     &__menu{
-       display: none; 
+        position: fixed;
+        right: 0;
+        top: 0;
+        background: white;
+        box-shadow: -2px 0 4px hsla(152, 24%, 15%, .1);
+        height: 100vh;
+        width: 80%;
+        z-index: 999;
+        text-transform: uppercase;
+        transform: translateX(100%);
+        border-radius: 1rem 0 0 1rem;
+        transition: transform .5s ease-in-out;
+        
     }
 
     &__list{
-        list-style-type: none; 
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.5em;
+
+    }
+
+    &__link {
+
     }
 
     &__btn {
         display: flex;
         align-items: center;
+        column-gap: .8em;
         font-size: 1.15rem;
     }
 
     &__toggle {
         display: flex;
         align-items: center;
-        padding-left: .8em;
+        cursor: pointer;
     }
+
+    &__close {
+        font-size: 1.15rem;
+        position: absolute;
+        top: 1rem;
+        right: 1.25rem;
+        cursor: pointer;
+    }
+}
+
+.show-menu {
+    transform: translateX(0%);
 }
 
 .hero {
@@ -196,10 +229,13 @@ a{
     &__img{
         position: relative;
         width: 120px;
-        justify-self: center;
         margin-bottom: .75em;
         transition: .3s;
       }
+
+    &__title {
+        text-align: center;
+    }
       
 }
 
