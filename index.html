@@ -28,8 +28,37 @@
                 </div>
             </div>
 
+            <div class="cart" id="cart-menu">
+                <h2 class="cart__title">Your Cart</h2>
+                <div class="cart__content" id="cart-content">
+                    <div class="cart__item">
+                        <img src="assets/images/product1.png" class="cart__img" alt="">
+                        <div class="cart__info">
+                            <h4>Cactus Plant</h4>
+                            <h5>$9.00</h5>
+                            <span class="cart__remove" id="cart-remove">remove</span>
+                        </div>
+
+                        <div class="cart__amount">
+                            <i class="ri-arrow-up-s-line"></i>
+                            <p>1</p>
+                            <i class="ri-arrow-down-s-line"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart__footer">
+                    <h3>Your Total : $ <span class="cart__total" id="cart-total">0</span></h3>
+                    <button class="cart__clear btn" id="cart-clear"> <span>Clear Cart</span> </button>
+                </div>
+
+                <div class="nav__close" id="cart-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
             <div class="nav__btn">
-                <i class="ri-shopping-bag-line"></i>
+                <i class="ri-shopping-bag-line" id="cart-toggle"></i>
 
                 <div class="nav__toggle" id="nav-toggle">
                     <i class="ri-menu-5-line"></i>
