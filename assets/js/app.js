@@ -6,9 +6,10 @@ const cartToggle = document.getElementById("cart-toggle");
 const cartMenu = document.getElementById("cart-menu");
 const cartClose = document.getElementById("cart-close");
 const cartContent = document.getElementById("cart-content");
+const cartItem = document.getElementById("cart-item");
 const cartClear = document.getElementById("cart-clear");
 const cartTotal = document.getElementById("cart-total");
-const cartRemove = document.getElementById("cart-remove");
+const cartRemove = document.getElementsByClassName("cart__remove");
 
 
 if(navToggle){
@@ -45,3 +46,21 @@ if(cartClose){
 }
 
 
+// SHOPPING CART
+console.log(cartRemove);
+
+/* 
+if(cartRemove){
+    cartRemove.addEventListener('click', () => {
+        console.log('clicked')
+    })
+}
+ */
+
+for(let i = 0; i < cartRemove.length; i++) {
+    let btnRemove = cartRemove[i];
+    btnRemove.addEventListener('click', (e) => {
+        let btnClicked = e.target
+        btnClicked.parentElement.parentElement.remove()
+    })
+}

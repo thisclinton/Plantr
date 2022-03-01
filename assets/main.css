@@ -200,6 +200,14 @@ a {
   text-transform: uppercase;
 }
 
+.cart__remove {
+  font-size: .7rem;
+  padding: .7em 1em;
+  text-transform: uppercase;
+  background-color: #990505;
+  border: none;
+}
+
 .show-cart {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);

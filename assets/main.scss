@@ -160,6 +160,14 @@ a{
         padding: 1em 3.5em;
         text-transform: uppercase;
     }
+
+    &__remove {
+        font-size: .7rem;
+        padding: .7em 1em;
+        text-transform: uppercase;
+        background-color: rgb(153, 5, 5);
+        border: none;
+    }
 }
 
 .show-cart {
