@@ -99,6 +99,7 @@ a {
 }
 
 .nav__btn {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -151,6 +152,20 @@ a {
   transition: -webkit-transform .5s ease-in-out;
   transition: transform .5s ease-in-out;
   transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
+}
+
+.cart__count {
+  position: absolute;
+  top: -4px;
+  right: 27px;
+  font-size: .7rem;
+  background-color: #3e6553;
+  color: #FFF;
+  text-align: center;
+  border: none;
+  border-radius: 50%;
+  width: 1.4em;
+  height: 1.4em;
 }
 
 .cart__title {

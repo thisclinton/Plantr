@@ -35,14 +35,14 @@
                         <img src="assets/images/product1.png" class="cart__img" alt="">
                         <div class="cart__info">
                             <h4>Cactus Plant</h4>
-                            <h5>$9.00</h5>
+                            <h5 class="cart__price">$9.00</h5>
                             <button class="cart__remove" id="cart-remove">remove</button>
                         </div>
 
                         <div class="cart__amount">
-                            <i class="ri-arrow-up-s-line"></i>
-                            <p>1</p>
-                            <i class="ri-arrow-down-s-line"></i>
+                            <i class="ri-arrow-up-s-line cart__item-increment"></i>
+                            <p class="cart__quantity">1</p>
+                            <i class="ri-arrow-down-s-line cart__item-decrement"></i>
                         </div>
                     </div>
 
@@ -50,14 +50,14 @@
                         <img src="assets/images/product2.png" class="cart__img" alt="">
                         <div class="cart__info">
                             <h4>Cactus Plant</h4>
-                            <h5>$9.00</h5>
+                            <h5 class="cart__price">$9.00</h5>
                             <button class="cart__remove" id="cart-remove">remove</button>
                         </div>
 
                         <div class="cart__amount">
-                            <i class="ri-arrow-up-s-line"></i>
-                            <p>1</p>
-                            <i class="ri-arrow-down-s-line"></i>
+                            <i class="ri-arrow-up-s-line cart__item-increment"></i>
+                            <p class="cart__quantity">1</p>
+                            <i class="ri-arrow-down-s-line cart__item-decrement"></i>
                         </div>
                     </div>
 
@@ -75,6 +75,7 @@
 
             <div class="nav__btn">
                 <i class="ri-shopping-bag-line" id="cart-toggle"></i>
+                <span class="cart__count">0</span>
 
                 <div class="nav__toggle" id="nav-toggle">
                     <i class="ri-menu-5-line"></i>
@@ -478,5 +479,6 @@
     </footer>
     
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/cart.js"></script>
 </body>
 </html>

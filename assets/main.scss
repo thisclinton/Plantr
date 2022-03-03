@@ -80,6 +80,7 @@ a{
     }
 
     &__btn {
+        position: relative;
         display: flex;
         align-items: center;
         column-gap: .8em;
@@ -119,6 +120,21 @@ a{
     border-radius: 1rem 0 0 1rem;
     transition: transform .5s ease-in-out;
     
+    &__count {
+        position: absolute;
+        top: -4px;
+        right: 27px;
+        
+        font-size: .7rem;
+        background-color: hsl(152, 24%, 32%);
+        color: #FFF;
+        text-align: center;
+        border: none;
+        border-radius: 50%;
+        width: 1.4em;
+        height: 1.4em;
+    }
+
     &__title {
         margin: 2em auto;
         text-align: center;
