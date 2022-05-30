@@ -1,4 +1,4 @@
-var cart = {
+/* var cart = {
   // (A) PROPERTIES
   hPdt : null,      // html products list
   hItems : null,    // html current cart
@@ -158,3 +158,4 @@ var cart = {
   }
 };
 window.addEventListener("DOMContentLoaded", cart.init);
+ */
